@@ -3,7 +3,6 @@ opened = open("Electronics.dat", "wb")
 
 store = []
 
-
 def takeInput(itemCount):
     print("Enter", itemCount, "item names, company names, quantities, prices separated by commas: ")
     for i in range(itemCount):

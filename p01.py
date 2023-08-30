@@ -1,10 +1,3 @@
-# Write a menu driven program to calcualte surface area and volume of solid
-# figures:
-# 1. Sphere
-# 2. Cuboid
-# 3. Cone
-# 4. Cylinder
-
 from math import pi
 
 while True:
