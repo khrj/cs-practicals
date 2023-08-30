@@ -1,11 +1,16 @@
-readable = open("read.txt", "r")
-writeable = open("write.txt", "w")
+def copyAM(fromFile, toFile):
+    readable = open(fromFile, "r")
+    writeable = open(toFile, "w")
 
-print("run")
-lines = readable.readlines()
+    lines = readable.readlines()
 
-for line in lines:
-    if line.startswith("a") or line.startswith("m"):
-        writeable.write(line)
+    for line in lines:
+        if line.startswith("a") or line.startswith("m"):
+            writeable.write(line)
 
-writeable.flush()
+    writeable.flush()
+
+copyAM(
+    input("Enter from file: "),
+    input("Enter to file: ")
+)
