@@ -1,3 +1,6 @@
-readable = open("india.txt", "r")
-content = readable.read()
-print(content.lower().count("india"))
+def countFromFile(fileName):
+    readable = open(fileName, "r")
+    content = readable.read()
+    print(content.lower().count("india"))
+
+countFromFile(input("Enter filename: "))
