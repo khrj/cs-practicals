@@ -14,3 +14,4 @@ rows = cursor.fetchall()
 print(rows)
 
 cursor.execute("DELETE FROM student WHERE stname='abc';")
+mydb.commit()
