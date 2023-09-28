@@ -1,9 +1,9 @@
 CREATE TABLE marks (
 	stid INTEGER PRIMARY KEY,
-    aadhaarno CHAR(14),
-    physics INTEGER,
-    chemistry INTEGER,
-    maths INTEGER
+	aadhaarno CHAR(14),
+	physics INTEGER,
+	chemistry INTEGER,
+	maths INTEGER
 );
 
 ALTER TABLE marks
@@ -15,13 +15,13 @@ INSERT INTO student
 	(stname, aadhaarno, hobby, dob)
 VALUES
 	("Rashmi", "4733 6592 2270", "dance", "2010-05-07"),
-    ("Tanu", "4640 0039 0437", "music", "2006-07-04"),
-    ("Hritik", "9897 3757 8824", "dance", "2007-01-13"),
-    ("Rakesh", "3092 3016 5011", "sport", "2004-03-09"),
-    ("Minali", "8155 3614 5390", "sport", "2014-03-10"),
-    ("Amrit", "9023 1977 2793", "music", "2004-09-12"),
-    ("Rati", "5214 0664 7499", "dance", "2018-03-22"),
-    ("Kalyan", "3469 7948 7075", "dance", "2014-12-20");
+	("Tanu", "4640 0039 0437", "music", "2006-07-04"),
+	("Hritik", "9897 3757 8824", "dance", "2007-01-13"),
+	("Rakesh", "3092 3016 5011", "sport", "2004-03-09"),
+	("Minali", "8155 3614 5390", "sport", "2014-03-10"),
+	("Amrit", "9023 1977 2793", "music", "2004-09-12"),
+	("Rati", "5214 0664 7499", "dance", "2018-03-22"),
+	("Kalyan", "3469 7948 7075", "dance", "2014-12-20");
 
 INSERT INTO marks 
 	(stid, aadhaarno, physics, chemistry, maths)
@@ -45,8 +45,8 @@ INSERT INTO student
 	(stname, aadhaarno, hobby, dob)
 VALUES
 	("Anaya", "7243 0294 8689", "dance", "2010-02-11"),
-    ("Subhash", "9335 1910 3036", "music", "2017-05-19"),
-    ("Talika", "8119 0574 4980", "sport", "2004-03-22");
+	("Subhash", "9335 1910 3036", "music", "2017-05-19"),
+	("Talika", "8119 0574 4980", "sport", "2004-03-22");
 
 INSERT INTO marks 
 	(stid, aadhaarno, physics, chemistry, maths)
@@ -63,6 +63,6 @@ UPDATE marks SET maths = "95" WHERE aadhaarno = "9335 1910 3036";
 UPDATE student 
 SET marks_percent = (
 	SELECT (physics + chemistry + maths)/3 
-    FROM marks
-    WHERE aadhaarno = student.aadhaarno
+	FROM marks
+	WHERE aadhaarno = student.aadhaarno
 ); 
