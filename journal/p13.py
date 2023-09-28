@@ -1,4 +1,4 @@
-def lessThan4Words(fromFile):
+def lessThan4Letters(fromFile):
     readable = open(fromFile, "r")
     
     words = readable.read().replace("\n", " ").split(" ")
@@ -6,4 +6,4 @@ def lessThan4Words(fromFile):
         if len(word) < 4:
             print(word)
     
-lessThan4Words(input("Enter file: "))
+lessThan4Letters(input("Enter file: "))

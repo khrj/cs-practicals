@@ -9,9 +9,5 @@ mydb = mysql.connector.connect(
 
 cursor = mydb.cursor()
 
-cursor.execute("SELECT * FROM student;")
-rows = cursor.fetchall()
-print(rows)
-
 cursor.execute("DELETE FROM student WHERE stname='abc';")
 mydb.commit()
