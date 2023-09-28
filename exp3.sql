@@ -45,7 +45,7 @@ SELECT * FROM student
 CROSS JOIN marks;
 
 SELECT * FROM student 
-WHERE marks BETWEEN 50 AND 70;
+WHERE marks_percent BETWEEN 50 AND 70;
 
 SELECT stname FROM student
 WHERE hobby = "dance" OR hobby = "music";
